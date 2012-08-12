@@ -11,7 +11,7 @@ class Stopwords::Snowball::Filter < Stopwords::Filter
 
     raise "Unknown locale" unless File.exists?(@locale_filename)
 
-    super File.read(@locale_filename).split(", ")
+    super File.read(@locale_filename).split(",")
 
   end
 
