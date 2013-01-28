@@ -10,7 +10,7 @@ class Stopwords::Filter
     words - @stopwords
   end
 
-  def stop_word? word
+  def stopword? word
     stopwords.include? word
   end
 
