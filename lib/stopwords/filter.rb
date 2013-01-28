@@ -10,4 +10,8 @@ class Stopwords::Filter
     words - @stopwords
   end
 
+  def stopword? word
+    stopwords.include? word
+  end
+
 end
