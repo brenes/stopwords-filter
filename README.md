@@ -29,7 +29,12 @@ in your Gemfile.
 ```
 stopwords = ['by', 'written', 'from']
 filter = Stopwords::Filter.new stopwords
-filter.filter 'guide by douglas adams'.split #-> ['guide', 'douglas', 'adams']
+
+filter.filter 'guide by douglas adams'.split
+# ['guide', 'douglas', 'adams']
+
+filter.stopword? 'by'
+# true
 ```
 
   2. Snowball version
@@ -37,7 +42,23 @@ filter.filter 'guide by douglas adams'.split #-> ['guide', 'douglas', 'adams']
 
 ```
 filter = Stopwords::Snowball::Filter.new "en"
-filter.filter 'guide by douglas adams'.split #-> ['guide', 'douglas', 'adams']
+filter.filter 'guide by douglas adams'.split
+# ['guide', 'douglas', 'adams']
+
+filter.stopword? 'by'
+# true
+```
+
+  2.1 Snowball version with Sieve class (thanks to @s2gatev)
+
+```ruby
+sieve = Stopwords::Snowball::WordSieve.new
+
+filtered = sieve.filter lang: :en, words: 'guide by douglas adams'.split
+# filtered = ['guide', 'douglas', 'adams']
+
+sieve.stopword? lang: :en, word: 'by'
+# true
 ```
 
 
@@ -103,6 +124,10 @@ Anything else?
 
 In a future version I would like to include a chaining filter where you include a series of operations and they are executed in a lineal order, just like the [Pipes and Filters design pattern][wikipedia_pipes_filters]
 
+Ackonowledgments
+----------------
+
+Thanks to @s2gatev who added the `stopword?` method and the sieve class to this gem
 
   [wikipedia_stopwords]: http://en.wikipedia.org/wiki/Stopword
   [solr]: https://github.com/sunspot/sunspot
@@ -111,3 +136,4 @@ In a future version I would like to include a chaining filter where you include 
   [postgre]: https://github.com/Casecommons/pg_search
   [wikipedia_snowball]: http://en.wikipedia.org/wiki/Snowball_programming_language
   [wikipedia_pipes_filters]: http://en.wikipedia.org/wiki/Pipes_and_filters
+
