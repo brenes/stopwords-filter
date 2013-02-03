@@ -25,8 +25,6 @@ Gem::Specification.new do |s|
     "lib/stopwords/filter.rb",
     "lib/stopwords/snowball.rb",
     "lib/stopwords/snowball/filter.rb",
-    "lib/stopwords/snowball/wordsieve.rb",
-    "lib/stopwords/snowball/locales/bg.csv",
     "lib/stopwords/snowball/locales/da.csv",
     "lib/stopwords/snowball/locales/de.csv",
     "lib/stopwords/snowball/locales/en.csv",
