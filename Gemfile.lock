@@ -23,6 +23,7 @@ GEM
 
 PLATFORMS
   ruby
+  x86-mingw32
 
 DEPENDENCIES
   jeweler (= 1.8.4)
