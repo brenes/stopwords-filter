@@ -1,0 +1,7 @@
+0.2.0:
+ * Added stopword? method [@s2gatev]
+ * Added Sieve class [@s2gatev]
+ * Added bulgarian language [@s2gatev]
+0.1.0
+ * Added simple filter [@brenes]
+ * Added snowball filter [@brenes]
