@@ -1,17 +1,21 @@
-class Stopwords::Filter
+module Stopwords
 
-  attr_reader :stopwords
+  class Filter
 
-  def initialize stopwords
-    @stopwords = stopwords
-  end
+    attr_reader :stopwords
 
-  def filter words
-    words - @stopwords
-  end
+    def initialize stopwords
+      @stopwords = stopwords
+    end
 
-  def stopword? word
-    stopwords.include? word
+    def filter words
+      words - @stopwords
+    end
+
+    def stopword? word
+      stopwords.include? word
+    end
+
   end
 
 end
