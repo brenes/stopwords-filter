@@ -15,5 +15,16 @@ describe Stopwords::Snowball::Filter do
 
   end
 
+  context "when custom list" do
+
+    let (:filter) { Stopwords::Snowball::Filter.new "es", ["Santurce"] }
+
+    subject { filter }
+
+    it("should remove the stopwords for the list of words to be filtered") { filter.filter("desde Santurce a Bilbao".split).should == ["Bilbao"]}
+
+  end
+
+
 
 end

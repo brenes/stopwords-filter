@@ -1,10 +1,10 @@
 module Stopwords
   module Snowball
     class Stopwords::Snowball::WordSieve
-      def initialize
+      def initialize custom_list = []
         @filters = Dir[File.dirname(__FILE__) + '/locales/*.csv'].each_with_object({}) do |file, filters|
           lang = File.basename(file, '.csv').to_sym
-          filters[lang] = Stopwords::Snowball::Filter.new lang
+          filters[lang] = Stopwords::Snowball::Filter.new lang, custom_list
         end
       end
 
