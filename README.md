@@ -17,7 +17,8 @@ gem install stopwords-filter
 or
 
 ```
-gem 'stopwords-filter'
+# Don't forget the 'require:'
+gem 'stopwords-filter', require: 'stopwords'
 ```
 
 in your Gemfile.
