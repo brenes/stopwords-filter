@@ -8,7 +8,7 @@ module Stopwords
         @locale = locale
         @locale_filename = "#{File.dirname(__FILE__)}/locales/#{locale}.csv"
 
-        raise "Unknown locale" unless File.exists?(@locale_filename)
+        raise "Unknown locale: #{locale.inspect}" unless File.exists?(@locale_filename)
         super File.read(@locale_filename).split(",") + custom_list 
       end
     end
