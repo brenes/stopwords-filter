@@ -9,7 +9,7 @@ describe Stopwords::Filter do
 
     subject { filter }
 
-    it("should remove the stopwords for the list of words to be filtered") { filter.filter("desde Santurce a Bilbao".split).should == ["Santurce", "Bilbao"]}
+    it("should remove the stopwords for the list of words to be filtered") { expect(filter.filter("desde Santurce a Bilbao".split)).to eq ["Santurce", "Bilbao"]}
 
   end
 
