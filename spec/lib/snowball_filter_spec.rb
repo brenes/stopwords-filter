@@ -25,6 +25,16 @@ describe Stopwords::Snowball::Filter do
 
   end
 
+  context "when locale is not found" do
+
+    let (:filter) { Stopwords::Snowball::Filter.new "no-real" }
+
+    subject { filter }
+
+    it("should throw an error explaining the locale not found") { expect{filter}.to raise_error(ArgumentError)}
+
+  end
+
 
 
 end
