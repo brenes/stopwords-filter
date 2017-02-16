@@ -1,5 +1,6 @@
 Edge:
   * Added Polish stopwords based on https://pl.wikipedia.org/wiki/Wikipedia:Stopwords [@grzegorzblaszczyk]
+  * Added info when no locale is found on snowball filter [@nerde]
 0.3.0:
  * Added custom words list to snowball filter [@sbeckeriv]
  * Fixed problem about initialization: https://github.com/brenes/stopwords-filter/issues/3 [@zackxu1]
