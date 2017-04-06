@@ -1,4 +1,4 @@
-Stopwords Filter
+Stopwords Filter [![Awesome RubyNLP](https://img.shields.io/badge/Awesome-RubyNLP-brightgreen.svg)](https://github.com/arbox/nlp-with-ruby)
 ================
 
 [![Build Status](https://travis-ci.org/brenes/stopwords-filter.svg?branch=master)](https://travis-ci.org/brenes/stopwords-filter)
