@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{stopwords-filter}
-  s.version = "0.4.1"
+  s.version = "0.5.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["David J. Brenes"]
-  s.date = %q{2017-02-16}
+  s.date = %q{2021-06-09}
   s.description = %q{Small library that allows you to create a simple stopwords filter or use some based on Snowball stopwords lists}
   s.email = %q{davidjbrenes@gmail.com}
   s.extra_rdoc_files = [
@@ -31,6 +31,7 @@ Gem::Specification.new do |s|
     "lib/stopwords/snowball/locales/bg.csv",
     "lib/stopwords/snowball/locales/da.csv",
     "lib/stopwords/snowball/locales/de.csv",
+    "lib/stopwords/snowball/locales/el.csv",
     "lib/stopwords/snowball/locales/en.csv",
     "lib/stopwords/snowball/locales/es.csv",
     "lib/stopwords/snowball/locales/fn.csv",
@@ -38,7 +39,9 @@ Gem::Specification.new do |s|
     "lib/stopwords/snowball/locales/hu.csv",
     "lib/stopwords/snowball/locales/it.csv",
     "lib/stopwords/snowball/locales/nl.csv",
+    "lib/stopwords/snowball/locales/pl.csv",
     "lib/stopwords/snowball/locales/pt.csv",
+    "lib/stopwords/snowball/locales/ro.csv",
     "lib/stopwords/snowball/locales/ru.csv",
     "lib/stopwords/snowball/locales/sv.csv",
     "spec/lib/filter_spec.rb",
