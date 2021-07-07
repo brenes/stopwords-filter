@@ -9,11 +9,11 @@ module Stopwords
     end
 
     def filter words
-      words - @stopwords
+      words.reject{ |word| stopword?(word) }
     end
 
     def stopword? word
-      stopwords.include? word
+      stopwords.include?(word) || stopwords.include?(word.downcase)
     end
 
   end
