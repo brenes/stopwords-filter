@@ -9,7 +9,7 @@ GEM
       rake
       rdoc
     rake (13.0.3)
-    rdoc (5.0.0)
+    rdoc (6.3.2)
     rspec (3.5.0)
       rspec-core (~> 3.5.0)
       rspec-expectations (~> 3.5.0)
