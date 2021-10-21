@@ -127,7 +127,7 @@ filter.filter 'guide by douglas adams'.split  #-> ['guide', 'douglas', 'adams']
 Which languages are supported with snowball?
 -------------------------------------------
 
-Currently we have:
+Currently we have support for:
 
   * Afrikaans (af)
   * Arabic (ar)
@@ -140,7 +140,7 @@ Currently we have:
   * Greek (el)
   * English (en)
   * Spanish (es)
-  * Finnish (fi)
+  * Finnish (fi): Due to an error it can also be used referring to the `fn` locale
   * French (fr)
   * Hebrew (he)
   * Hungarian (hu)
@@ -168,6 +168,8 @@ Ackonowledgments
 ----------------
 
 Thanks to @s2gatev who added the `stopword?` method and the sieve class to this gem
+
+Thanks to @bettysteger, @fauno, @vrypan, @woto, @grzegorzblaszczyk, @nerde, @sbeckeriv and @zackxu1 for language support and other features.
 
   [wikipedia_stopwords]: http://en.wikipedia.org/wiki/Stopword
   [solr]: https://github.com/sunspot/sunspot
