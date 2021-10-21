@@ -1,3 +1,22 @@
+0.6.0:
+  * Added support for: [@bettysteger] [#16]
+    * Afrikaans (af)
+    * Arabic (ar)
+    * Bengali (bn)
+    * Breton (br)
+    * Catalán (ca)
+    * Czesch (cs)
+    * Hebrew (he)
+    * Indonesian (id)
+    * Korean (ko)
+    * Thai (th)
+    * Turkish (tr)
+    * Vietnamese (vi)
+  * Added keywords for English and German [@bettysteger] [#16]
+  * Fixed upcase/downcase behaviour [@bettysteger] [#16]
+  * Added gender neutral versions of some words in spanish [@fauno] [#17]
+  * Bumped rdoc version [@dependabot] [#18]
+  * Fixed Finnish locale code from `fn` to `fi`
 0.5.0:
   * Added Greek stopwords based on Lucene [@vrypan] [#13]
   * Fixed CSV format for sv and ru locales [@woto] [#14]
