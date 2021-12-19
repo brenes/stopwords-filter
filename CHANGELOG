@@ -1,5 +1,6 @@
 master:
   * Fixed Wordiseve class [@hmaack] [#19]
+  * Added suport for Chinese (zh) [@bettysteger] [#20]
 
 0.6.0:
   * Added support for: [@bettysteger] [#16]
