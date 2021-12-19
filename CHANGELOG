@@ -1,4 +1,4 @@
-master:
+0.7.0:
   * Fixed Wordiseve class [@hmaack] [#19]
   * Added suport for Chinese (zh) [@bettysteger] [#20]
 
