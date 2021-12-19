@@ -134,6 +134,7 @@ Currently we have support for:
   * Bengali (bn)
   * Breton (br)
   * Catalán (ca)
+  * Chinese (zh)
   * Czesch (cs)
   * Danish (da)
   * German (de)
