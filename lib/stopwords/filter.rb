@@ -5,7 +5,7 @@ module Stopwords
     attr_reader :stopwords
 
     def initialize stopwords
-      @stopwords = stopwords
+      @stopwords = stopwords.map(&:downcase)
     end
 
     def filter words

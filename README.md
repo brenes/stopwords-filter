@@ -107,6 +107,8 @@ That's all?
 
 I know what you're thinking, it takes a line of ruby code to filter one array from other. That's why we have added an extra functionality, [Snowball][wikipedia_snowball] stopwords lists, already built for you and ready to use.
 
+At least, in the beginning we were using snowball stopwords, but several collaborators have improved this humble gem by including new languages or adding new stopwords. So now, the Snowball version is more an "Snowball and friends" version.
+
 How do I use that snowball thing?
 ---------------------------------
 
@@ -122,6 +124,42 @@ And then you filter without worrying about the exact stopwords used
 filter.filter 'guide by douglas adams'.split  #-> ['guide', 'douglas', 'adams']
 ```
 
+Which languages are supported with snowball?
+-------------------------------------------
+
+Currently we have support for:
+
+  * Afrikaans (af)
+  * Arabic (ar)
+  * Bengali (bn)
+  * Breton (br)
+  * Catalán (ca)
+  * Chinese (zh)
+  * Czesch (cs)
+  * Danish (da)
+  * German (de)
+  * Greek (el)
+  * English (en)
+  * Spanish (es)
+  * Finnish (fi): Due to an error it can also be used referring to the `fn` locale
+  * French (fr)
+  * Hebrew (he)
+  * Hungarian (hu)
+  * Indonesian (id)
+  * Italian (it)
+  * Korean (ko)
+  * Dutch (nl)
+  * Polish (pl)
+  * Portuguese (pt)
+  * Romanian (ro)
+  * Russian (ru)
+  * Swedish (sv)
+  * Thai (th)
+  * Turkish (tr)
+  * Vietnamese (vi)
+
+In the changelog you can see the collaborators for each language.
+
 Anything else?
 --------------
 
@@ -131,6 +169,8 @@ Ackonowledgments
 ----------------
 
 Thanks to @s2gatev who added the `stopword?` method and the sieve class to this gem
+
+Thanks to @bettysteger, @fauno, @vrypan, @woto, @grzegorzblaszczyk, @nerde, @sbeckeriv and @zackxu1 for language support and other features.
 
   [wikipedia_stopwords]: http://en.wikipedia.org/wiki/Stopword
   [solr]: https://github.com/sunspot/sunspot
