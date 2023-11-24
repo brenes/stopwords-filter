@@ -8,7 +8,7 @@ module Stopwords
         @locale = locale.gsub(/-\w+/, '') # remove country appendix
         @locale_filename = "#{File.dirname(__FILE__)}/locales/#{locale}.csv"
 
-        raise ArgumentError.new("Unknown locale: #{locale.inspect}") unless File.exists?(@locale_filename)
+        raise ArgumentError.new("Unknown locale: #{locale.inspect}") unless File.exist?(@locale_filename)
         super File.read(@locale_filename).split(",") + custom_list
       end
     end
